@@ -1,6 +1,13 @@
 language: python
 python:
   - '3.6'
+# Handle git submodules yourself
+git:
+  submodules: false
+# Use sed to replace the SSH URL with the public URL, then initialize submodules
+before_install:
+  - sed -i 's/git@github.com:/https:\/\/github.com\//' .gitmodules
+  - git submodule update --init --recursive
 install:
   - wget -qO- https://api.github.com/repos/gohugoio/hugo/releases/latest | sed -r -n
     '/browser_download_url/{/Linux-64bit.deb/{s@[^:]*:[[:space:]]*"([^"]*)".*@\1@g;p}}'
