@@ -1,19 +1,21 @@
 language: python
 python:
-  - '3.6'
+- '3.6'
 install:
-  # install latest release version
-  - wget -qO- https://api.github.com/repos/gohugoio/hugo/releases/latest | sed -r -n '/browser_download_url/{/Linux-64bit.deb/{s@[^:]*:[[:space:]]*"([^"]*)".*@\1@g;p}}' | xargs wget
-  - sudo dpkg -i hugo*.deb
-  - pip install Pygments
-  - rm -rf public 2> /dev/null
+- wget -qO- https://api.github.com/repos/gohugoio/hugo/releases/latest | sed -r -n
+  '/browser_download_url/{/Linux-64bit.deb/{s@[^:]*:[[:space:]]*"([^"]*)".*@\1@g;p}}'
+  | xargs wget
+- sudo dpkg -i hugo*.deb
+- pip install Pygments
+- rm -rf public 2> /dev/null
 script:
-  - hugo
+- hugo
 deploy:
+  matrix:
   - provider: s3
     access_key_id: AKIAIIORSR4VN3YQY2YQ
     secret_access_key:
-      secure: emyN/uB9WXzV0dviD3Fi9toM2oKkUX0IhRJ0vToH6KvFkX6MEmCTmtKAAFXe+Lhw8boujWg4+t0S3zt82z57NLN9f/9SB4JlFidtB+/9BJS/AbUgj+bFP3u2lMqUf0u09AfIFIw/gyO2TidWXrBeoF9JflquS+80lhBsDDIlKkG6M76oGZX/qHKbVW62j2tNX9XEhUuGC8AVguj73qHGQeqhi3u4ohFAsSc0K4I0jbzUHn6LX89jX9lx8iXXxsI+lbOdAe6HIjVRfpwiYp5QVYqJydVqzlo5jJ0YCzYCUAZbTsDesUmVBIZ+Atj1K12mr7fz1z4qe37WSFuDFPChLNKFEEsco28gM4EOR+Ff8FHJEpL+aDBrBrsG3I0nrV25whwnwdYHeDp6+m76WvQ6LWtC82OnBik+khwdi4nsi9WUBXbuiMpcGrcxRsN5b5Jt97twKIHs6Hfdtp9xXLeTxxWtacGpd1KnCyDEjazuWBtwgb9AMUD/C0s/1xvoHN9+DAlDPe4DpNz99WYq1iDybCL575aAjsiXvYHUtweu7IBL5SykfAnvCb4Iqk3+xqSrMtM37LJGtgu2ZSt1DlQGSgysG8R6F6ey+QpqiqzuQN4S89sWEtw6eHL+zvN6lKOKLSZhh+XlRWcDPCQWzM6zo+KAKsDIdZyXdPi+IWCIzHQ=
+      secure: p8uHkcgIoVpmTIJmaFTNeO9EHZ6sQHPrlA93IdDE7RJ1T+OfABdyIXdkTzjIUC/x/Hsj+0CjqjtV8CAzSpANvQe7R/O415FMKhqIAk5yLyLZcKb8tT2ZkRS37rUHqHC6M4N41Saax61mCApLAr4OPy45wANQgmOCPXmozbN9Nh5udrImrBrAsAeM92USxfcYV4KXqAuo9+oFrB96m9jWO3sepyM1mmbz2J7dXB7EkuwdkWhSQZH9Rn3wy5aXO1uShABEx/AqtduWPTQzN484JzsC39j0hWZbOTR2VWgnayda/bn7F34Pz3IGK7zf5iBmskxP4Ekc+SatjM8i2eJMCN6XEiQFRzPEE2On/5fQ9JKFEP/4xrOa9DEXAavvWh/V+YKhgUE0S3yn5bM8BvymYaPoXBFfpX9dOw4r97UK7w1JEyDgx18mZO8fNr8W6woBgJO4E9MFTq/7mR+cAQBGy6DCVVpgeFpuvnDJ24vugP5qbfR85DzMZHKdaOsDqyxsv7Uiamb4B/k2ihHUznmpjkgeXb2y7k96MPiy0oKKGrMZfPSmbKDDca1ZZLDJSdPElKNmlCQ5/mwnPE595qIv5MQ78MnmcQSLtkn8y74GDjvKmfwFEAP4O7b8r8ogaK6V5KYNwZPYE5MUZy2SyfjJjJMJCfNz+ACuu1UwRyqf4o0=
     bucket: rovercode-user-docs
     local_dir: public
     acl: public_read
