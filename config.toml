@@ -1,6 +1,6 @@
-baseURL = "http://example.org/"
+baseURL = "https://docs.rovercode.com"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "rovercode documentation"
 theme = "learn"
 [outputs]
   home = [ "HTML", "RSS", "JSON"]
