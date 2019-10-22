@@ -7,5 +7,5 @@ weight: 10
 
 1. Write your name on the front of the Rovercode box.
 1. You should have the following items in your box.
-![All the items from the box laid out and labeled](/images/WhatsInBox.jpg "What's in the Box")
+   ![All the items from the box laid out and labeled]("What's in the Box. UPDATE ME!")
 1. Make sure all the items are in your box.
