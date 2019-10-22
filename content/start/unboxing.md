@@ -9,3 +9,7 @@ weight: 10
 1. You should have the following items in your box.
    ![All the items from the box laid out and labeled]("What's in the Box. UPDATE ME!")
 1. Make sure all the items are in your box.
+
+Now, let's connect all the pieces to the chassis to build your rover.
+
+![Staring point of the rovercode chassis]("Chassis from box UPDATE ME with new chassis starting point")
