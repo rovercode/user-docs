@@ -6,10 +6,10 @@ weight: 10
 ---
 
 1. Write your name on the front of the Rovercode box.
-1. You should have the following items in your box.
-   ![All the items from the box laid out and labeled]("What's in the Box. UPDATE ME!")
-1. Make sure all the items are in your box.
 
-Now, let's connect all the pieces to the chassis to build your rover.
+1. Pull everything out of your box and make sure you have everything in the image below. Don't worry if things aren't the same color. Some things might still be in their plastic packaging. Finally, don't worry if you don't see the screws: they are already screwed into their places.
+   ![All the items from the box laid out and labeled](/images/start/WhatsInTheBox.jpg)
 
-![Staring point of the rovercode chassis]("Chassis from box UPDATE ME with new chassis starting point")
+1. Now, let's connect all the pieces to the chassis to build your rover.
+
+![Staring point of the rovercode chassis](/images/start/ChassisStartingPoint.jpg)

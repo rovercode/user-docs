@@ -5,17 +5,21 @@ draft: false
 weight: 170
 ---
 
-1. Use the tiny, black nylon screws and the #0 Phillips bit in the screw driver to attach the LEDs to the rover.
-   ![Use the tiny, black nylon screws to attach the LEDs](/images/start/13_LedScrews.jpg "LED screws")
+Next, we'll attach the RGB LEDs to the Rover.
+"RGB" stands for "Red, Green, Blue".
+These LEDs are lights that the Rover can set to any color.
 
-1. Attach the first LED to the standoffs using 2 black screws. There is a third mounting hole, but no screw goes in there or it would block the cable.
-   ![Attach the first LED to the rover]( "LED on rover UPATE ME with LED pic")
+1. Find your two RGB LEDs in your box. They are still in their plastic packaging.
 
-1. Connect the Grove cable labeled `LED` to the first LED's input.
-   ![Connect the cable to the first LED]( "LED with cable UPDATE ME with photo of LED and cable")
+1. Connect the Grove cable labeled `LED` to the first LED's connected marked `In`. Then, take the short cable that came in the LED's packaing, and connect it to the connector marked `Out`.
+   ![Connect the cables to the first LED](/images/start/FirstLED.jpg "First LED")
 
-1. Attach the second LED with 2 black screws and connect a 20 cm Grove cable to its input.
-   ![Attach the second LED and its cable]( "Both LEDs UPDATE ME")
+1. Take the two small screws out of their standoff posts. Then, attach the first LED to the standoffs the screws. (There is a third mounting hole, but no screw goes in there or it would block the cable).
+   ![Attach the first LED to the rover](/images/start/FirstLEDAttached.jpg "First LED attached")
 
-1. Connect the cable from the input of the second LED to the output of the first LED. This is called chaining.
-   ![Connect the second LED input to the output of the first]( "LEDs chained UPDATE ME")
+1. Connect your second LED's `In` connector to the shorter cable coming from the first LED.
+   ![Attach the second LED's cable](/images/start/SecondLED.jpg "Second LED")
+
+1. Screw the second LED to the chassis just like you did the first one.
+   ![Connect the second LED to the rover](/images/start/SecondLEDAttached.jpg "LEDs chained UPDATE ME")
+

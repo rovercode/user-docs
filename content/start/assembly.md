@@ -6,4 +6,4 @@ weight: 190
 ---
 
 1. Congratulations! Your rover is now assembled!
-   ![Your rover is now assembled]( "Assembled rover UPDATE ME")
+   ![Your rover is now assembled](/images/start/30_AssembledRover.jpg "Assembled Rover")
