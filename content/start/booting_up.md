@@ -16,3 +16,5 @@ After you connect the USB cable to the battery, your Rover is booting up!
 Just for fun, put your ear down by the ultrasonic sensors.
 Hear the clicking?
 
+![When the LEDs turn blue, things are running.](/images/start/BlueLeds.jpg "Blue LEDs")
+

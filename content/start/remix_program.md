@@ -10,6 +10,7 @@ Let's remix a program and run your first code on your Rover!
 1. Head back to your laptop, and pick the **Programs** button from the upper-left menu on [app.rovercode.com](https://app.rovercode.com).
 
 1. Use the search box in the **Find More** section to search for "Vanguard Dance". Find the one created by "expert-coder" then click "View".
+    ![Find More search box](/images/start/FindMore.png "Find More search box")
 
 1. Now you're viewing expert-coder's program. Let's make our own copy of it that we can change by remixing it! Click the **Remix** button.
 
