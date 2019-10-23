@@ -16,3 +16,5 @@ Let's remix a program and run your first code on your Rover!
 
 1. Now you've got your own copy of the program!
 
+![The program](/images/start/Program.png "Program")
+
